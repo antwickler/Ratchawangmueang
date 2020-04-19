@@ -1,43 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
 
-    <head>
+<head>
 
-        <!-- Meta -->
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="initial-scale=1.0">
 
-        <title>Ratchawangmueang House</title>
-        <meta name="Garden house" content="Ratchawangmueang House">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="./css/extension.js"></script>
+    <title>Ratchawangmueang House</title>
+    <meta name="Garden house" content="Ratchawangmueang House">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./css/extension.js"></script>
 
-        <!-- The compiled CSS file -->
-        <link rel="stylesheet" href="css/production.css">
+    <!-- The compiled CSS file -->
+    <link rel="stylesheet" href="css/production.css">
 
-        <!-- Web fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Mitr|Nunito:400,700" rel="stylesheet">
+    <!-- Web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Prompt|Nunito:300,400,700" rel="stylesheet">
 
-        <!-- favicon -->
-        <link rel="shortcut icon" href="./img/favicon.png">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.png">
 
-    </head>
+</head>
 
-    <body>
+<body>
 
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="100700361521533"
+        theme_color="#57aa8d"
+        logged_in_greeting="Hi! How can we help you?"
+        logged_out_greeting="Hi! How can we help you?">
+    </div>
 
     <!-- Header -->
-    <header class="pt2 pb1 align--center">
+    <header class="pt2 align--center">
         <div class="container">
-            <p>Welcome to</p>
-            <h1><a href="https://www.ratchawangmueang.com/"><img class="logo" src="./img/logo.png" alt="Ratchawangmueang House"></a></h1>
+            <h1><a href="https://www.ratchawangmueang.com/"><img class="logo" src="./img/favicon.png" alt="Ratchawangmueang House" width="150px" height="150px"></a></h1>
         </div>
     </header>
 
     <!-- Body -->
     <main>
-        
+
         <div class="container">
 
             <!-- Info -->
@@ -50,14 +75,14 @@
                     </div>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-2">
-                    <h3>Text 1</h3>
-                    <p>Text</p>
+                    <h3>ข้อความ 1</h3>
+                    <p>อพาร์ทเมนต์มอคค่าแอลมอนด์อะ วานิลลาดยุก เทเลกราฟอุปการคุณไวอะกร้าเลกเชอร์ โมเดลซัมเมอร์เวณิกาแจ็กพ็อต มินท์แซมบ้าซีเรียสแฟ็กซ์มาร์ต มะกันโดนัทซีเรียสแฮมเบอร์เกอร์เอ็กซ์เพรส คอลเล็กชั่นสะเด่า เด้อน็อกโปรโมชั่น มหภาค รันเวย์จิตพิสัย ไคลแมกซ์</p>
                 </div>
 
                 <!-- Text2 -->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-4">
                     <h3>Text 2</h3>
-                    <p>Text</p>
+                    <p>ซัมเมอร์บ๊อกซ์ซูชิไนน์โมเดิร์น รวมมิตรเช็งเม้งหลินจือรีดไถเอสเพรสโซ ออร์แกนิกรีเสิร์ช ไวอะกร้าบอร์ดสามช่าโนติสบาร์บีคิว ว้าววาริชศาสตร์ปาร์ตี้แคร์ วืดแจ็กพ็อตฟินิกซ์ตุ๊ดวาริชศาสตร์ บาลานซ์วาไรตี้หลินจือเย้ว ไหร่วาซาบิ โดนัทไงดิกชันนารี ตี๋ป๋อหลอ แทงโก้ดีเจ</p>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-3">
                     <div class="relative">
@@ -75,13 +100,13 @@
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-6">
                     <h3>Text 3</h3>
-                    <p>Text</p>
+                    <p>เลิฟวาซาบิ ราชานุญาตไอติมอุปนายกแฮปปี้ คันถธุระวาริชศาสตร์แฟนตาซีหงวน โก๊ะ แมชชีนออดิทอเรียมเคลมอันเดอร์รุมบ้า ฮัมสเตริโอ หงวน ฮิปฮอปโมจิฮิปโป ยอมรับดัมพ์เท็กซ์เซนเซอร์แจ๊กพอต ชัวร์ไพลินราชบัณฑิตยสถานราชบัณฑิตยสถาน คอนโดไกด์อึ้มลีกคาร์โก้</p>
                 </div>
 
                 <!-- Text4 -->
                 <div class="grid-column span-half pt3 pb3 mobile-m order-8">
                     <h3>Text 4</h3>
-                    <p>Text</p>
+                    <p>บุ๋นสุริยยาตร โมเต็ลไมค์สปายโยเกิร์ต ถ่ายทำจ๊าบคอนแท็คชีสรุมบ้า กระดี๊กระด๊าเก๋ากี้ตังค์บ๊อกซ์แพ็ค เลดี้ซันตาคลอสเอเซียแอโรบิคเที่ยงวัน เทรดดีไซน์เทค กลาสบาลานซ์มาร์ตโอเวอร์สตูดิโอ โอเคตะหงิดมินท์แชมเปี้ยนซ้อ มอลล์ไฮเอนด์แชมพูบิ๊ก</p>
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-7">
                     <div class="relative">
@@ -99,65 +124,44 @@
                 </div>
                 <div class="grid-column span-half pt3 pb3 mobile-m order-10">
                     <h3>Text 5</h3>
-                    <p>Text</p>
+                    <p>ซีเนียร์บลูเบอร์รี เรตติ้งบาร์บี้เซลส์ เซนเซอร์นางแบบไบโอ ลีเมอร์บลูเบอร์รี่ นายพรานเมคอัพคอรัปชันเวิร์กอพาร์ทเมนต์ ไอซ์ แฟรีอพาร์ตเมนท์โง่เขลาล้มเหลวบ๊วย เวอร์แดนซ์ซิ่ง อมาตยาธิปไตยดีพาร์ตเมนท์แพนด้าตี๋ราชานุญาต ออดิชั่นพรีเมียมพาสเจอร์ไรส์แอปเปิล</p>
                 </div>
             </section>
 
         </div>
 
-        <!-- Text -->
-        <section class="align--center pt2 pb3">
-            <p class="h2">Under development, see you soon.</p>
-            <p>#</p>
-        </section>
+        <!-- Call -->
+        <div style="width: 100%; height: 400;">
+            <section class="align--center pt2 pb2">
+                <p class="h2">ติดต่อสอบถามเพิ่มเติม</p>
+                <p>วิรัตน์ ราชวังเมือง &nbsp;<img class="icon" src="./img/call.svg" alt="Call">&nbsp; 087-294-7053 </p>
+            </section>
+        </div>
 
-        <!-- Contact -->
-        <!-- <section class="bg--secondary-color pt3 pb3">
-            <div class="container">
-                <div class="mb2 align--center">
-                    <h3 class="mb1">Contact us to get started</h3>
-                    <p>We'll reply when we get back from&nbsp;Text3.</p>
-                </div>
-                <form>
-                    <div class="grid-row">
-                        <div class="grid-column span-half mt1">
-                            <label class="label" for="name">Name</label>
-                            <input class="form-control" id="name">
-                        </div>
-                        <div class="grid-column span-half mt1">
-                            <label class="label" for="email">Email</label>
-                            <input class="form-control" id="email" type="email">
-                        </div>
-                    </div>
-                    <label class="label mt1" for="dates">Title</label>
-                    <input class="form-control" id="dates">
-                    <label class="label mt1" for="message">Message</label>
-                    <textarea class="form-control" id="message"></textarea>
-                    <div class="align--right mt1">
-                        <button class="btn btn--outline">Send</button>
-                    </div>
-                </form>
-            </div>
-        </section> -->
-        
     </main>
 
     <!-- Footer -->
-    <footer class="pt2 pb2">
+    <footer class="pt2 pb2"> 
         <div class="container align--center">
-            <h4>Ratchawangmueang House 353 Moo 7 Pabon,</h4>
-            <h4>Pabon, Phatthalung, Thailand 93170</h4>
+            <h4><img class="logofooter" src="./img/logo.png" alt="Ratchawangmueang House"></a></h4>
+            <h4>353 หมู่ 7 ต.ป่าบอน อ.ป่าบอน จ.พัทลุง 93170</h4>
             <ul class="no-bullets list--inline mt1">
-                <li class="mr1"><a href="https://www.facebook.com/antwickler" class="link"><img class="icon" src="./img/facebook.svg" alt="Facebook"></a></li>
-                <li><a href="https://www.instagram.com/ratchawangmueang" class="link"><img class="icon" src="./img/instagram.svg" alt="Instagram"></a></li>
+                <li class="mr1"><a href="https://www.facebook.com/Ratchawangmueang" class="link"><img class="icon"
+                            src="./img/facebook.svg" alt="Facebook"></a></li>
+                <li class="mr1"><a href="https://www.instagram.com/ratchawangmueang" class="link"><img class="icon"
+                            src="./img/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="mailto:weerasak.ratchawangmueang@gmail.com" class="link"><img class="icon"
+                            src="./img/mail.svg" alt="Email"></a></li>
             </ul>
             <h6>
-                &copy; 2010-<script type="text/javascript">document.write(new Date().getFullYear());</script> 
-                Ratchawangmueang ― Made with ❤️ by <a href="https://weerasak.ratchawangmueang.com/" style="color:#171a1a;text-decoration:none;">Antwickler</a>
+                &copy; 2020 Ratchawangmueang House ― Made with ❤ by
+                <a href="https://weerasak.ratchawangmueang.com/" style="color:#608F5B;text-decoration:none;">
+                    Antwickler
+                </a>
             </h6>
         </div>
     </footer>
 
-    </body>
-</html>
+</body>
 
+</html>
